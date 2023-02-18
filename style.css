@@ -8,3 +8,44 @@
 body {
   background: linear-gradient(260deg, #b75d62, #754d4f);
 }
+
+
+.showcase{
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 90vh;
+  padding: 0rem 15% 0rem 15%;
+  overflow: hidden;
+}
+
+nav{
+  min-height: 10vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 15%;  
+}
+
+.logo{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+nav img{
+  transform: scale(0.7);
+}
+
+.image-container{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80vh;
+}
+
+.image-container img{
+  width: 90%;
+}
