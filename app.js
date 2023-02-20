@@ -71,8 +71,36 @@ barba.init ({
                 // gsap.fromTo(next, {opacity: 0}, {opacity:0, duration: 1,  onComplete: done});
             },
         },
+
+        // producto pagina animatione
+        {
+            name: "product-transition",
+            async: true, // para que quede mas fluido cuando queremos volver al home
+            from: {namespace: ["handbag", "product"]},
+            to: {namespace: ["product", "handbag"]},
+            enter(data){
+                const done = this.async();
+                let next = data.next.container;
+                productEnterAnimation(next,done);
+
+            },
+            leave(data){
+                const done = this.async();
+                let current = data.next.container
+                productLeaveAnimation(current, done);
+            }
+        }
     ],
 });
+function productEnterAnimation (next,done)  {
+    tlEnter.fromTo(next, {y: "100%"}, { y: "0%"});
+    tlEnter.fromTo(".card", {opacity: 0, y: 50}, {opacity: 1, y: 0, stagger: 0.1, onComplete: done});
+}
+
+function productLeaveAnimation(current, done) {
+    tlLeave.fromTo(current, {y: "0%"}, {y: "100%", onComplete: done });
+}
+
 
 // linear gradient showcase
 
