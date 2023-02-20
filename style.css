@@ -159,6 +159,7 @@ nav img{
   display: grid;
   padding: 0% 15%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   /* esto es como un @media */
   grid-gap: 2rem;
 }
 
