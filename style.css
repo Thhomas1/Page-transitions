@@ -44,8 +44,88 @@ nav img{
   align-items: center;
   justify-content: flex-start;
   height: 80vh;
+  z-index: 2;
+  flex: 1;
 }
 
 .image-container img{
-  width: 90%;
+  width: 80%;
+}
+
+.showcase-text {
+  color: white;
+  flex: 1;
+  padding-bottom: 10rem;
+}
+.circle {
+  position: absolute;
+}
+
+.showcase-title {
+  font-size: 2.2rem;
+}
+
+.showcase-subtitle{
+  font-size: 1rem;
+  padding: 3rem 0rem;
+  font-weight: 400;
+}
+
+.showcase-button {
+  padding: 1rem 2.5rem;
+  margin-left: 3rem;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all .5s ease;
+  font-family: "Poppins", sans-serif ;
+ }
+ 
+ .showcase-button:hover {
+  letter-spacing: 3px;
+  background-color: hsl(351, 54%, 57%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(116, 53, 57) 0px 7px 29px 0px;
+ }
+ 
+ .showcase-button:active {
+  letter-spacing: 3px;
+  background-color: hsl(351, 43%, 34%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(116, 53, 57) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+ }
+
+.showcase-arrow{
+  position: absolute;
+  right: 15%;
+  bottom: 10%;
+  transform: scale(0.6);
+}
+
+
+ /* burbujitaaa */
+
+
+.circle-1 {
+  left: -3%;
+  bottom: -3%;
+  transform: scale(1.5);
+}
+
+.circle-2{
+  left: 35%;
+  bottom: 10%;
+}
+
+.circle-3{
+  left: 20%;
+  top: 15%;
+  transform: scale(1.2);
 }
